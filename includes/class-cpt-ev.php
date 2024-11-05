@@ -28,12 +28,12 @@ class CPT_EV {
         );
 
         // Registrar Custom Post Type: Equipo
-        $this->register_post_type(
+        /*$this->register_post_type(
             'team',
             'Equipo',
             'Usuario',
             'dashicons-buddicons-buddypress-logo'
-        );
+        );*/
 
         // Registrar Custom Post Type: Cliente
         $this->register_post_type(
@@ -41,6 +41,13 @@ class CPT_EV {
             'Clientes',
             'Cliente',
             'dashicons-businessman'
+        );
+        // Registrar Custom Post Type: Contacto
+        $this->register_post_type(
+            'contacto',
+            'Contactos',
+            'Contacto',
+            'dashicons-email-alt'
         );
     }
 
